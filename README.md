@@ -1,13 +1,12 @@
 # Compline - A Colorscheme for Deep Contemplation and Work
 
+![Compline palette](https://revere.b-cdn.net/compline/complineimg.png)
+
 **Compline**: from the Latin "completorium" - completion. The final prayer of the Catholic Liturgical Hours, a time for deep contemplation, to be at peace with the darkness.
 
 **Lauds**: from the Latin "laudes" - to praise, to glorify. The dawn prayer of the Liturgical Hours, greeting the rising sun with thanksgiving, welcoming the light that scatters darkness.
 
 These colorschemes embody this tradition in code. Monastic minimalism: colors as whispers of the same tone, suggestions rather than shouting at the user. Built for those who seek deep contemplation and focus in their computing environment. The colors fall into the background, accessible when you need them, but muted enough to ignore them.
-
-![Compline palette](https://revere.b-cdn.net/compline/2025-10-31-131317_grim.png)
-![Lauds palette](https://revere.b-cdn.net/compline/2025-11-04-191227_grim.png)
 
 ## The Motivation
 For years, [Nord](https://www.nordtheme.com) was the default across my system.

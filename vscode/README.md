@@ -25,6 +25,8 @@ Ported to VS Code by `rivethorn` — this repository contains the VS Code extens
 3. Search for "Compline"
 4. Click Install
 
+Or, use this [link](https://marketplace.visualstudio.com/items?itemName=rivethorn.compline)
+
 ## Usage
 
 1. Open the Command Palette (`Cmd+Shift+P` on macOS, `Ctrl+Shift+P` on Windows/Linux)

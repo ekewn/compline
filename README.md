@@ -91,4 +91,4 @@ Thus this is a homage to Nord, Everforest, and various monotone colorschemes - b
 - [piero-vic](https://github.com/piero-vic) - for alacritty port
 - [rivethorn](https://github.com/rivethorn) - for ghostty and vscode ports
 - [camilo-zuluaga](https://github.com/camilo-zuluaga) - for lualine port
-
+- [Moshyfawn](https://github.com/Moshyfawn) - for zed port

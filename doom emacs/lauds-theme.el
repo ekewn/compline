@@ -1,4 +1,4 @@
-;;; doom-spacegrey-theme.el --- I'm sure you've heard of it -*- lexical-binding: t; no-byte-compile: t; -*-
+;; lauds-theme.el --- Welcome the light -*- lexical-binding: t; no-byte-compile: t; -*-
 ;;
 ;; Added: October 20, 2025
 ;; Author: joshuablais <https://github.com/jblais493>
@@ -10,39 +10,35 @@
 
 (require 'doom-themes)
 
-;;
 ;;; Variables
 
-(require 'doom-themes)
-
-(defgroup doom-spacegrey-theme nil
-  "Options for the `doom-spacegrey' theme."
+(defgroup doom-lauds-theme nil
+  "Options for the `doom-lauds' theme."
   :group 'doom-themes)
 
-(defcustom doom-spacegrey-brighter-modeline nil
+(defcustom doom-lauds-brighter-modeline nil
   "If non-nil, more vivid colors will be used to style the mode-line."
-  :group 'doom-spacegrey-theme
+  :group 'doom-lauds-theme
   :type 'boolean)
 
-(defcustom doom-spacegrey-brighter-comments nil
+(defcustom doom-lauds-brighter-comments nil
   "If non-nil, comments will be highlighted in more vivid colors."
-  :group 'doom-spacegrey-theme
+  :group 'doom-lauds-theme
   :type 'boolean)
 
-(defcustom doom-spacegrey-comment-bg doom-spacegrey-brighter-comments
+(defcustom doom-lauds-comment-bg doom-lauds-brighter-comments
   "If non-nil, comments will have a subtle, darker background. Enhancing their
 legibility."
-  :group 'doom-spacegrey-theme
+  :group 'doom-lauds-theme
   :type 'boolean)
 
-(defcustom doom-spacegrey-padded-modeline doom-themes-padded-modeline
+(defcustom doom-lauds-padded-modeline doom-themes-padded-modeline
   "If non-nil, adds a 4px padding to the mode-line. Can be an integer to
 determine the exact padding."
-  :group 'doom-spacegrey-theme
+  :group 'doom-lauds-theme
   :type '(choice integer boolean))
 
 
-;;
 ;;; Theme definition
 
 (def-doom-theme lauds
@@ -63,7 +59,7 @@ determine the exact padding."
    (fg         '("#1a1d21" "#2d2d2d" "black"        ))  ; warm charcoal - perfect
    (fg-alt     '("#4A4D51" "#4e4e4e" "brightblack"  ))
    (grey       base4)
-   
+
    ;; REFINED: Slightly more saturation for instant recognition
    (red        '("#8B6666" "#BF616A" "red"          ))  ; deeper dusty rose
    (orange     '("#7A6D5A" "#A2957C" "brightred"    ))  ; richer earth-clay
@@ -82,7 +78,7 @@ determine the exact padding."
    (vertical-bar   (doom-darken bg 0.25))
    (selection      base4)
    (builtin        cyan)
-   (comments       base5) 
+   (comments       base5)
    (doc-comments   base5)
    (constants      teal)
    (functions      blue)
@@ -103,10 +99,10 @@ determine the exact padding."
 
    ;; custom categories
    (hidden     `(,(car bg-alt) "black" "black"))
-   (-modeline-bright doom-spacegrey-brighter-modeline)
+   (-modeline-bright doom-lauds-brighter-modeline)
    (-modeline-pad
-    (when doom-spacegrey-padded-modeline
-      (if (integerp doom-spacegrey-padded-modeline) doom-spacegrey-padded-modeline 4)))
+    (when doom-lauds-padded-modeline
+      (if (integerp doom-lauds-padded-modeline) doom-lauds-padded-modeline 4)))
 
    (modeline-fg     'unspecified)
    (modeline-fg-alt (doom-blend violet base4 (if -modeline-bright 0.5 0.2)))
@@ -124,7 +120,7 @@ determine the exact padding."
 
   ;;;; Base theme face overrides
   (((font-lock-comment-face &override)
-    :background (if doom-spacegrey-comment-bg (doom-lighten bg 0.05)))
+    :background (if doom-lauds-comment-bg (doom-lighten bg 0.05)))
    ((line-number &override) :foreground base4)
    ((line-number-current-line &override) :foreground fg)
    (mode-line
@@ -176,6 +172,4 @@ determine the exact padding."
   ;; ()
   )
 
-;;; doom-spacegrey-theme.el ends here
-
-
+;;; lauds-theme.el ends here

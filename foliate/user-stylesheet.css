@@ -1,0 +1,16 @@
+@namespace epub "http://www.idpf.org/2007/ops";
+html {
+    color-scheme: light dark;
+}
+
+/* bold font color in the light theme*/
+strong, b {
+    color: #4A4D51 !important;
+}
+
+/* bold font color in the dark theme*/
+@media (prefers-color-scheme: dark) {
+    strong, b {
+        color: #98a4ac !important;
+    }
+}

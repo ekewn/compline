@@ -9,3 +9,21 @@ A dark and minimal theme that is easy on the eyes.
 ** lauds
 
 A parchment like light theme that you'll actually like!
+
+
+To load in lazynvim import as such
+```
+return {
+  {
+    "compline",
+    dir = ".../compline/nvim/compline/", -- Add complete the path to where the repo is saved
+    name = "compline",
+    lazy = false,
+    priority = 1000,
+    config = function()
+      vim.cmd("colorscheme compline")
+    end,
+  },
+}
+
+```
